@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <title>I Love You Ma</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 60px;
+      color: #89CFF0; /* အပြာနုရောင် */
+      text-align: center;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      animation: heartbeat 1.5s infinite;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: 20px;
+      font-size: 30px;
+      animation: floatUp 3s infinite ease-in-out;
+      color: #ff4d6d;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.05); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-300px) scale(1.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>I love You Ma,<br>မ ကို အရမ်းချစ်တယ်</h1>
+
+  <!-- Heart icons -->
+  <div class="heart" style="left: 50%;">❤️</div>
+  <div class="heart" style="left: 55%; animation-delay: 1s;">❤️</div>
+  <div class="heart" style="left: 45%; animation-delay: 2s;">❤️</div>
+</body>
+</html>
